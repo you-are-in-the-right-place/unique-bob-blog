@@ -1,0 +1,59 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <!-- Page top section start -->
+	<div class="page-top-area set-bg" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+		<div class="breadcrumb-area">
+			<a href="{% url 'index_page' %}">Home</a> / <span>Members</span>
+		</div>
+	</div>
+	<!-- Page top section end -->
+
+    <!-- Services section start -->
+	<section class="portfolio-section">
+        <div class="sp-pad spad">
+			<!-- portfolio filter menu -->
+			<ul class="portfolio-filter controls" style="margin-top: -100px">
+                <li class="control"><a href="{% url 'member_page' %}" style="color: #868686">Director</a></li>
+                <li class="control" style="font-size: 12pt"><a href="{% url 'member_senior' %}" style="color: #000000">Senior Researchers</a></li>
+                <li class="control"><a href="{% url 'member_res' %}" style="color: #868686">Researchers</a></li>
+			</ul>
+		</div>
+		<div class="container-fluid services-warp" style="margin-top: -100px">
+            <div class="container p-0">
+                <div class="row">
+                    <h3 class="sp-title" style="text-align: center">Senior Researchers</h3>
+                </div>
+                {% for sen in seniors %}
+                    <div class="row">
+                    {% if sen.thumb %}
+                    <figure class="intro-img mt-5 mt-xl-0">
+                        <img src="{{ sen.thumb }}">
+                    </figure>
+                    {% else %}
+                    <figure class="intro-img mt-5 mt-xl-0">
+                        <img src="http://protocol.korea.ac.kr/wp-content/uploads/2018/12/graduate-cap-isometric-3d-icon-vector-6971581.jpg">
+                    </figure>
+                    {% endif %}
+                    <div style="margin-left: 20px">
+                        <p style="font-size: 13pt"><strong>{{ sen.name }}</strong></p>
+                    {% if sen.desc %}
+                    <p><i class="flaticon-laptop" style="margin-right: 5px"></i> {{ sen.desc }}</p>
+                    {% endif %}
+                    {% if sen.email %}
+                    <p><i class="flaticon-envelope" style="margin-right: 5px"></i> {{ sen.email }}</p>
+                    {% endif %}
+                    </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <br/>
+		</div>
+	</section>
+	<!-- Services section start end -->
+    <div style="height: 60px">
+
+    </div>
+
+{% endblock %}

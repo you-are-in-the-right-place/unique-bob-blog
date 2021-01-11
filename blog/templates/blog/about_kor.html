@@ -1,0 +1,48 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<!-- Page top section start -->
+	<div class="page-top-area set-bg" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+		<div class="breadcrumb-area">
+			<a href="{% url 'index_page' %}">Home</a> / <span>About us</span>
+		</div>
+	</div>
+	<!-- Page top section end -->
+
+
+	<!-- Intro section start -->
+	<section class="portfolio-section">
+        <div class="sp-pad spad">
+			<!-- portfolio filter menu -->
+			<ul class="portfolio-filter controls" style="margin-top: -100px">
+                <li class="control" style="font-size: 12pt"><a href="/about/" style="color: #868686">English</a></li>
+                <li class="control" style="font-size: 12pt"><a href="/about/kor/" style="color: #000000">한국어</a></li>
+                {#<li class="control"><a href="/member/research/" style="color: #868686">Researchers</a></li>#}
+			</ul>
+		</div>
+    <div class="container-fluid services-warp" style="margin-top:-100px">
+		<div class="container p-0">
+{#			<div class="row">#}
+{#				<div class="col-xl-4">#}
+					<h3 class="sp-title">About CCRC</h3>
+				    <p style="font-size: 15pt">암호화폐가 프로그램이 가능한 화폐의 성격을 지녀 단순한 화폐가 아니라 플랫폼이 되어가고 있다. 암호화폐는 분산환경에서 이익공유경제를 실현할 수 있어 산업의 틀을 바꿀 촉매제로 인식되고 있다.
+</p>
+                    <p style="font-size: 15pt">이로 인해 암호화폐를 개발하고 활용하는 인력수요가 급격히 증가하고 있다. 또한 기업이 요구하는 기술수준이 날로 높아지고 있다. 그런데 세계 어느 국가든 이 급격한 수요를 충족할 수 있는 인력과 기술을 감당할 준비가 되어있지 않다.
+</p>
+            <p style="font-size: 15pt"><strong style="color:#005cbf">고려대 암호화폐연구센터</strong>는 인력양성, 기술개발, 제도정립을 담당하기 위해 설립됐다. 
+            고려대 정보보호대학원의 교육, 기술, 정책 역량을 최대한 활용하면서 국내외 연구기관 및 교육기관과 
+            협력해 역량을 강화해 나갈 예정이다.
+</p>
+{#                </div>#}
+                    <br/>
+				<div class="offset-xl-1">
+					<figure class="intro-img mt-5 mt-xl-0">
+						<img src="{% static "img/intro.jpg" %}" alt="">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Intro section end -->
+{% endblock %}

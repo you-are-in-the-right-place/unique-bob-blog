@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Unique-BoB-Blog</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="HALO photography portfolio template">
+	<meta name="keywords" content="photography, portfolio, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="{% static "img/favicon.ico" %}" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://colorlib.com/preview/theme/halo/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://colorlib.com/preview/theme/halo/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://colorlib.com/preview/theme/halo/css/flaticon.css"/>
+	<link rel="stylesheet" href="https://colorlib.com/preview/theme/halo/css/animate.css"/>
+	<link rel="stylesheet" href="https://colorlib.com/preview/theme/halo/css/owl.carousel.css"/>
+	<link rel="stylesheet" href="https://colorlib.com/preview/theme/halo/css/style.css"/>
+    <!--<link rel="stylesheet" href="http://toutetsu.co.jp/towadafujiya/MyIcons/flaticon.css"/>-->
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section start -->
+	<header class="header-section sp-pad">
+		<h3 class="site-logo">UBBB</h3>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<nav class="main-menu">
+			<ul>
+				<li><a href="{% url 'index_page' %}">Home</a></li>
+				<li><a href="{% url 'about_page' %}">ABOUT US</a></li>
+				<li><a href="{% url 'research_page' %}">RESEARCH</a></li>
+				<li><a href="{% url 'member_page' %}">MEMBER</a></li>
+				<li><a href="{% url 'notice_page' %}">NOTICE</a></li>
+				<li><a href="{% url 'contact_page' %}">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header section end -->
+
+
+	{% block content %}
+    {% endblock %}
+
+
+	<!-- Footer section start -->
+	<footer class="footer-section">
+		<div class="container text-center">
+			<div class="social">
+				</br>
+
+                </br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<a href="https://colorlib.com" target="_blank" style="color: #000000">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+			</div>
+		</div>
+
+
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static "js/jquery-3.2.1.min.js" %}"></script>
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<script src="{% static "js/owl.carousel.min.js" %}"></script>
+	<script src="{% static "js/mixitup.min.js" %}"></script>
+	<script src="{% static "js/circle-progress.min.js" %}"></script>
+	<script src="{% static "js/main.js" %}"></script>
+</body>
+</html>

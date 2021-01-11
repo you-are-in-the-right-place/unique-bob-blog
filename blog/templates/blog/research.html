@@ -1,0 +1,57 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <!-- Page top section start -->
+	<div class="page-top-area set-bg" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+		<div class="breadcrumb-area">
+			<a href="{% url 'index_page' %}">Home</a> / <span>Research Fields</span>
+		</div>
+	</div>
+	<!-- Page top section end -->
+
+    <!-- Services section start -->
+	<section class="services-section spad">
+		<div class="container-fluid services-warp">
+            <div class="container p-0">
+                <div class="row">
+                    <h3 class="sp-title">Research Fields</h3>
+                </div>
+                <p style="font-size: 15pt">Cryptocurrency issues generally fall under the technology sector, economic sector, and policy sector. A healthy eco-system for cryptocurrency can only be built by systematically
+                    and harmoniously resolving issues under these three sectors. The Center has three research teams to support this tri-sector structure.</p>
+            </div>
+            <br/>
+			<div class="container p-0">
+				<div class="row" style="text-align: center">
+                    <div class="col-md-4" style="text-align: center">
+                        <div class="icon-box" style="text-align: center">
+                            <i class="flaticon-monitor"></i>
+                            <h4 style="font-size: 15pt">Technology Research</h4>
+                            <p style="font-size: 13pt">Technology Research is responsible for proposing and verifying innovative technologies concerning
+                                matters such as consensus mechanisms, processing speed, and distributed processing.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="flaticon-money"></i>
+                            <h4 style="font-size: 15pt">Token Economy Research</h4>
+                            <p style="font-size: 13pt">Token Economy Research deals with practical economic matters including, among others,
+                                coin economy, financial items, incentive mechanism, and coin assessment. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="flaticon-information"></i>
+                            <h4 style="font-size: 15pt">Policy Research</h4>
+                            <p style="font-size: 13pt">Policy Research is responsible for resolving legal, economical, and social conflicts that can arise upon
+                                incorporating cryptocurrencies into institutions, and for studying reasonable measures allowing consumers,
+                                investors, developers, and the government to share benefits.</p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services section start end -->
+
+{% endblock %}

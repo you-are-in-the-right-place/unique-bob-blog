@@ -1,0 +1,110 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+	<!-- Hero section start -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item set-bg sp-pad" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+				<div class="hs-text">
+					<h4 class="hs-title">Unique-BoB-Blog</h4>
+					<p class="hs-des">original : CryptoCurrency Research Center</p>
+				</div>
+			</div>
+			<div class="hs-item set-bg sp-pad" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+				<div class="hs-text">
+					<h2 class="hs-title">Unique-BoB-Blog</h2>
+					<p class="hs-des">원본 : 암호화폐 연구센터</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+	<!-- Services section start -->
+	<section class="services-section spad">
+		<div class="container-fluid services-warp">
+            <div class="container p-0">
+                <div class="row">
+                    <h3 class="sp-title">Research Fields</h3>
+                </div>
+                <p style="font-size: 15pt">Cryptocurrency issues generally fall under the technology sector, economic sector, and policy sector. A healthy eco-system for cryptocurrency can only be built by systematically
+                    and harmoniously resolving issues under these three sectors. The Center has three research teams to support this tri-sector structure.</p>
+            </div>
+            <br/>
+            <br/>
+			<div class="container p-0">
+				<div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="flaticon-video-camera"></i>
+                            <h4 style="font-size: 15pt">Technology Research</h4>
+                            <p style="font-size: 13pt">Technology Research is responsible for proposing and verifying innovative technologies concerning
+                                matters such as consensus mechanisms, processing speed, and distributed processing.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="flaticon-photo-camera"></i>
+                            <h4 style="font-size: 15pt">Token Economy Research</h4>
+                            <p style="font-size: 13pt">Token Economy Research deals with practical economic matters including, among others,
+                                coin economy, financial items, incentive mechanism, and coin assessment. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="flaticon-safebox"></i>
+                            <h4 style="font-size: 15pt">Policy Research</h4>
+                            <p style="font-size: 13pt">Policy Research is responsible for resolving legal, economical, and social conflicts that can arise upon
+                                incorporating cryptocurrencies into institutions, and for studying reasonable measures allowing consumers,
+                                investors, developers, and the government to share benefits.</p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services section start end -->
+
+
+	<!-- Contact section start -->
+	<section class="contact-section set-bg spad" data-setbg="{% static "img/contact-bg.jpg" %}">
+		<div class="container-fluid contact-warp">
+			<div class="contact-text">
+				<div class="container p-0">
+					<h3 class="sp-title">Contact</h3>
+                    <p></p>
+					<ul class="con-info">
+						<li><i class="flaticon-phone-call"></i>02-ubbb-blog</li>
+						<li><i class="flaticon-envelope"></i>unique-bob-blog@korea.ac.kr</li>
+						<li><i class="flaticon-placeholder"></i>서울시 성북구 안암로 145<br> 애기능생활관 107호, 02841</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container p-0" style="visibility: hidden;">
+				<div class="row">
+					<div class="col-xl-8 offset-xl-4">
+						<form class="contact-form">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" placeholder="지도 들어갈 자리">
+								</div>
+								<div class="col-md-6">
+									<input type="email" placeholder="E-mail">
+								</div>
+								<div class="col-md-12">
+									<input type="text" placeholder="Subject">
+									<textarea placeholder="Message"></textarea>
+									<button class="site-btn light">Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section end -->
+{% endblock %}

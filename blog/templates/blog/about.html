@@ -1,0 +1,51 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<!-- Page top section start -->
+	<div class="page-top-area set-bg" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+		<div class="breadcrumb-area">
+			<a href="{% url 'index_page' %}">Home</a> / <span>About us</span>
+		</div>
+	</div>
+	<!-- Page top section end -->
+
+
+	<!-- Intro section start -->
+	<section class="portfolio-section">
+        <div class="sp-pad spad">
+			<!-- portfolio filter menu -->
+			<ul class="portfolio-filter controls" style="margin-top: -100px">
+                <li class="control" style="font-size: 12pt"><a href="/about/" style="color: #000000">English</a></li>
+                <li class="control"><a href="/about/kor/" style="color: #868686">한국어</a></li>
+                {#<li class="control"><a href="/member/research/" style="color: #868686">Researchers</a></li>#}
+			</ul>
+		</div>
+    <div class="container-fluid services-warp" style="margin-top:-100px">
+		<div class="container p-0">
+{#			<div class="row">#}
+{#				<div class="col-xl-4">#}
+					<h3 class="sp-title">About CCRC</h3>
+				    <p style="font-size: 15pt">Cryptocurrency is not merely a type of currency but is becoming a platform based on its ability
+                        to function as a digital platform. Cryptocurrency allows to realize profit-sharing economy in
+                        a distributed network environment, thus, is acknowledged as a catalyst to change the industrial framework.</p>
+                    <p style="font-size: 15pt">Accordingly, the need for human resources to develop and utilize cryptocurrency technologies is rapidly
+                        growing and the level of technology required by industries is increasing day by day. Nevertheless,
+                        no country is currently ready to supply the manpower and technology to satisfy these demands.</p>
+            <p style="font-size: 15pt">The <strong style="color:#005cbf">objective of Cryptocurrency Research Center (“Center”) at Korea University</strong> is to educate human resources,
+                        develop technology, and establish systems in the field of cryptocurrency and blockchain.
+                        The Center is planning to strengthen competence by collaborating with domestic and foreign research
+                        and educational institutions while fully utilizing the educational, technological and political
+                        capabilities and resources of the Graduate School of Information Security of Korea University.</p>
+{#                </div>#}
+                    <br/>
+				<div class="offset-xl-1">
+					<figure class="intro-img mt-5 mt-xl-0">
+						<img src="{% static "img/intro.jpg" %}" alt="">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Intro section end -->
+{% endblock %}

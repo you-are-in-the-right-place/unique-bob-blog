@@ -1,0 +1,44 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<!-- Page top section start -->
+	<div class="page-top-area set-bg" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+		<div class="breadcrumb-area">
+			<a href="{% url 'index_page' %}">Home</a> / <span>Notices</span>
+		</div>
+	</div>
+	<!-- Page top section end -->
+
+    <!-- Services section start -->
+	<section class="services-section spad">
+		<div class="container-fluid services-warp">
+            <div class="container p-0" style="align-content: center">
+                <h3 class="sp-title">Notice</h3>
+                <table style="align-content: center" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for ann in announces %}
+                            <tr>
+                                <td><a href="{% url 'notice_each' id=ann.pk %}" style="color: #000000">{{ ann.title }}</a></td>
+                                <td>{{ ann.author }}</td>
+                                <td>{{ ann.created_date }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <br/>
+		</div>
+	</section>
+	<!-- Services section start end -->
+    <div style="height: 60px">
+
+    </div>
+{% endblock %}

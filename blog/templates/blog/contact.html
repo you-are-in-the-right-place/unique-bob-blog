@@ -1,0 +1,52 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<!-- Page top section start -->
+	<div class="page-top-area set-bg" data-setbg="https://wallpaperaccess.com/full/210978.jpg">
+		<div class="breadcrumb-area">
+			<a href="#">Home</a> / <span>Contact</span>
+		</div>
+	</div>
+	<!-- Page top section end -->
+
+		<!-- Contact section start -->
+	<section class="services-section spad">
+		<div class="container-fluid contact-warp">
+			<div class="services-text">
+				<div class="container p-0" style="color: #000000">
+					<h3 class="sp-title">Contact</h3>
+					<p></p>
+					<ul class="con-info" style="list-style: none; color: #444444">
+						<li><i class="flaticon-phone-call"></i>  02-ubbb-blog</li>
+						<li><i class="flaticon-envelope"></i>  unique-bob-blog@korea.ac.kr</li>
+						<li><i class="flaticon-placeholder"></i>  서울시 성북구 안암로 145<br> 애기능생활관 107호, 02841</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container p-0" style="visibility: hidden">
+				<div class="row">
+					<div class="col-xl-8 offset-xl-4">
+						<form class="contact-form">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" placeholder="Your name">
+								</div>
+								<div class="col-md-6">
+									<input type="email" placeholder="E-mail">
+								</div>
+								<div class="col-md-12">
+									<input type="text" placeholder="Subject">
+									<textarea placeholder="Message"></textarea>
+									<button class="site-btn light">Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section end -->
+	<!-- Contact section end -->
+{% endblock %}
